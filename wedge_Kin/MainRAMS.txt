@@ -1,0 +1,26 @@
+% source params
+
+freq = 100; % sound frequency
+zs = 10;  % source depth
+
+% physical domain
+
+rmax = 4000;     % extension in range
+zmax = 1800;     % extension in depth
+
+% parabolic equation params
+
+aModel = RAMs;
+np = 5;       % Pade approximation order
+dr = 5;       % meshsize in range
+dz = 0.2;     % meshsize in depth
+c0 = 1500;    % reference sound speed
+drProf = 100; % meshsize (in range) for bottom and hydrology profiles
+
+
+% saving results:
+
+ndr = 2;         % grid refinement in range for saving results
+ndz = 1;         % grid refinement in depth for saving results
+zmplt = 100;     % maximal depth for saving the computed field
+zr = 10;         % transmission loss horizon
