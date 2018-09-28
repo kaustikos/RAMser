@@ -1,8 +1,6 @@
 classdef BasicModelRunner < IModelRunner
     
     properties
-        startedConfig
-        startedRun
     end
     
     methods
